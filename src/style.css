@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    background-color: hsl(216, 12%, 8%);
+    position: relative;
+    font-family: 'Overpass', sans-serif;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: hsl(213, 19%, 18%);
+    color: white;
+    height: auto;
+    width: 75vw;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.star-icon {
+    /* background-color: hsl(210, 12%, 54%); TODO: different color*/
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+
+.text-area {
+    text-align: justify;
+}
+
+.text-area p {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+
+}
+
+.ratings-element {
+    border-radius: 90px;
+    background-color: hsl(216, 12%, 54%);
+    cursor: pointer;
+    display: flex; /* or inline-flex */
+    align-items: center; 
+    justify-content: center;
+    height: 6vh;
+    width: 6vh;
+    margin: 0.5rem;
+    padding: 1.5rem;
+
+    opacity: 0.6;
+    transition: 1s all;
+
+}
+
+.ratings-element:hover {
+    background-color: hsl(25, 97%, 53%);
+    opacity: 1;
+}
+
+#submit {
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    padding: 1rem;
+    width: 100%;
+    transition: 1s all;
+}
+
+#submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
