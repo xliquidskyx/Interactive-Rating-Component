@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
-  <script src="animation.js"></script>
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <body>
@@ -17,7 +16,7 @@
 
   <main id="wrapper">
 
-    <div class="container">
+    <div id="container">
 
       <img src="/images/icon-star.svg" class="star-icon">
 
@@ -26,33 +25,33 @@
         <p>Please let us know how we did with your support request. All feedback is appreciated 
           to help us improve our offering!</p>
       </section>
+
+      <div id="ratings">
+        <div class="ratings-element">1</div>
+        <div class="ratings-element">2</div>
+        <div class="ratings-element">3</div>
+        <div class="ratings-element">4</div>
+        <div class="ratings-element">5</div>
+      </div>
   
-      <section class="ratings">
-        <div class="ratings-element" onclick="ratingClick()">1</div>
-        <div class="ratings-element" onclick="ratingClick()">2</div>
-        <div class="ratings-element" onclick="ratingClick()">3</div>
-        <div class="ratings-element" onclick="ratingClick()">4</div>
-        <div class="ratings-element" onclick="ratingClick()">5</div>
-      </section>
       
-      <button id="submit" type="button">
+      <button id="submit" type="button" onclick="submitRating()">
         Submit  
       </button>
       <!-- Rating state end -->
+    </div>
     
-      <!-- Thank you state start -->
-  <!--   
+    <div id="hidden-container">
+      <img src="/images/illustration-thank-you.svg" alt="mobile phone illustration" class="phone-image">
       <section class="text-area">
-        You selected x out of 5
+        <div class="info">You selected <!--<p id="chosenNumber"></p>/-->4 out of 5</div>
     
         Thank you!
       
         We appreciate you taking the time to give a rating. If you ever need more support, 
         don’t hesitate to get in touch!
       
-      </section> -->
-  
-      <!-- Thank you state end -->
+      </section>
     </div>
 
   </main>
@@ -62,5 +61,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script type="text/javascript" src="animation.js"></script>
 </body>
 </html>
