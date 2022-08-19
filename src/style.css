@@ -41,6 +41,7 @@ html, body {
 
 #hidden-container {
     display: none;
+    flex-direction: column;
     background: rgb(37,45,55);
     background: linear-gradient(180deg, rgba(37,45,55,0.788410432532388) 59%, rgba(37,45,55,0.5587185557816876) 71%);
     color: white;
@@ -78,7 +79,7 @@ html, body {
 
 }
 
-.ratings-element {
+.ratings-element, .active {
     border-radius: 90px;
     background-color: hsl(213, 19%, 18%);
     cursor: pointer;
@@ -100,7 +101,7 @@ html, body {
     opacity: 1;
 }
 
-.ratings-element.active {
+.active {
     background-color: hsl(25, 97%, 53%);
     opacity: 1;
 }
@@ -124,9 +125,29 @@ html, body {
 }
 
 .info {
-    background-color:hsl(216, 12%, 54%);
+    align-self: center;
+    background: rgb(37,45,55);
+    background: linear-gradient(180deg, rgba(55, 70, 86, 0.701) 40%, rgba(52, 64, 79, 0.559) 71%);
+    border-radius: 90px;
     color:hsl(25, 97%, 53%);
     text-align: center;
+    padding: 0.5em;
+    width: 45vw;
+}
+
+.thanks-info {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.phone-image {
+    align-self: center;
+    height: auto;
+    width: 30vh;
+}
+
+.text-area > p {
+    opacity: 0.8;
 }
 
 /*MEDIA QUERY*/
@@ -140,4 +161,10 @@ html, body {
         height: auto;
         width: 25vw;
   }
+
+    .info {
+        height: auto;
+        max-width: 20vw;
+    }
+
 }
